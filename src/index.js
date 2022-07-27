@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-
-
+import SearchBar from './components/SearchBar'
+import ImageList from './components/ImageList'
+import App from './components/App'
 
 
 
@@ -12,4 +13,3 @@ root.render(
   </React.StrictMode>
 );
 
-/
