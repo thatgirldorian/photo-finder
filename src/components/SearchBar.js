@@ -13,8 +13,8 @@ class SearchBar extends React.Component {
                 <form className="ui form">
                     <div className="field">
                         <label>Search for photos</label>
-                        <input type="text" className="prompt" 
-                            onChange={(event) => console.log(event.target.value)} 
+                        <input type="text"  
+                            onChange={this.onInputChange} 
                             />
                     </div>
                 </form>
