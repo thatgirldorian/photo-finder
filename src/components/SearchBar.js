@@ -6,8 +6,10 @@ class SearchBar extends React.Component {
     state = { term: '' }
 
     //add an event handler to the form to disable default submit
-    onFormSubmit(event) {
+    onFormSubmit = (event) => {
         event.preventDefault()
+
+        console.log(this.state.term)
     }
 
     render() {
