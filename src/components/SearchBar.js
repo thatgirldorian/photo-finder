@@ -9,7 +9,7 @@ class SearchBar extends React.Component {
     onFormSubmit = (event) => {
         event.preventDefault()
 
-        console.log(this.state.term)
+        this.props.onSubmit(this.state.term)
     }
 
     render() {
@@ -29,15 +29,6 @@ class SearchBar extends React.Component {
                     </div>
                 </form>
             </div>
-
-
-            // <div class="ui search">
-            // <div class="ui icon input">
-            // <input class="prompt" type="text" placeholder="Common passwords..." />
-            // <i class="search icon"></i>
-            // </div>
-            // <div class="results"></div>
-            // </div>
         )
     }
 }
