@@ -3,15 +3,13 @@ import axios from "axios";
 import SearchBar from './SearchBar'
 import ImageList from './ImageList'
 
-
-const accessKey = process.env.REACT_APP_unsplashKey
-
 class App extends React.Component {
 //define a callback function to grab the search terms and return results
     onSearchSubmit(term) {
-        axios.get('https://api.unsplash.com/search/photos', { 
+        axios.get('https://api.unsplash.com/search/photos/', { 
+            params: { query: term},
             headers: { 
-                Authorization: Client-ID + accessKey, 
+                Authorization: `Client-ID ${process.env.REACT_APP_unsplashKey}`
             }
         })
     }
