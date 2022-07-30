@@ -5,16 +5,16 @@ import ImageList from './ImageList'
 
 class App extends React.Component {
 //define a callback function to grab the search terms and return results
-    onSearchSubmit(term) {
-        axios.get('https://api.unsplash.com/search/photos/', { 
+    async onSearchSubmit(term) {
+        const response = await axios.get('https://api.unsplash.com/search/photos/', { 
             params: { query: term},
             headers: { 
                 Authorization: `Client-ID ${process.env.REACT_APP_unsplashKey}`
             }
         })
-    }
+        console.log(response.data.results)
 
-    //use the search term to get requests from the API
+    }
 
 
     render() {
