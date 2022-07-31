@@ -20,7 +20,7 @@ class SearchBar extends React.Component {
                     className="ui form"
                 >
                     <div className="field">
-                        <label>Search for photos</label>
+                        <label>Search for stock photos below</label>
                         <input 
                             type="text" 
                             value={this.state.term} 
