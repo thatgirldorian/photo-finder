@@ -26,7 +26,7 @@ state = { images: [] };
                 <h1>Photo Finder</h1>
                 <SearchBar onSubmit={this.onSearchSubmit} />
                 Found: {this.state.images.length} images
-                <ImageList />
+                <ImageList images={this.state.images} />
         </div>
         )
     }
