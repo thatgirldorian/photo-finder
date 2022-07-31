@@ -3,6 +3,7 @@
 This is a web application that will help you find stock photos for your personal projects and web applications. I built it with React JS, semantic UI and the Unsplash API. I also used CSS Grid to format the returned images on the UI. 
 
 <h3>Issues faced & resolution:</h3>
+
 - I kept getting this error: "Can't read property of undefined" in my code, but I was able to resolve this by using arrow functions.
 - I also did not want to show my API key in the body in my auth code but I was able to tuck it away in the .env file. I know this is not ideal, but it'll do for now since this application is a personal project, not a production app.
 
